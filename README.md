@@ -1,4 +1,4 @@
-![logo](https://github.com/TheFlyingWhale/Weather-Check/blob/main/src/common/images/logo.png?raw=true)
+![logo](https://github.com/TheFlyingWhale/Weather-Check/blob/main/src/common/images/logo/logo.png?raw=true)
 
 # Application - Weather Check
 
