@@ -1,0 +1,23 @@
+@import '../../common/styles/Colors.scss';
+
+.searchBar{
+    height: 30px;
+    width: 250px;
+    padding-left: 15px;
+    padding-top: 2.5px;
+    border-radius: 100px;
+    border: none;
+    background: url('../../common/images/uiIcons/searchIcon.svg') no-repeat scroll 16px 16px;
+    background-position: 95% center;
+    background-size: 16px 16px;
+    background-color: $gray-light;
+    color: $gray-dark;
+}
+
+.searchBar:focus{
+    outline: none;
+}
+
+.searchBar::placeholder{
+    color: #828282;
+}

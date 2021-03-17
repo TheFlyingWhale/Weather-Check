@@ -1,0 +1,27 @@
+.information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information h1 {
+    margin: 0px;
+}
+
+.weatherIcon {
+    width: 50%;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail {
+    width: 125px;
+}
+
+.detail h2, .detail p {
+    margin: 0px;
+}

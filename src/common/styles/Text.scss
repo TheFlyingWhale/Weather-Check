@@ -1,0 +1,57 @@
+/*
+    Text.css takes care of style-setting all text-elements
+    Font-size is calulated with a base size of 1rem = 16
+    To calculate new sizes take 0,0625 * px
+*/
+
+$small: 1rem; //16px
+$medium: 1.125rem; //18px
+$large: 1.5rem; //24px
+$big: 5rem; //80px
+
+:root {
+    font-size: 16px;
+}
+
+.txt-small {
+    font: {
+        size: $small;
+    }
+}
+
+.txt-normal {
+    font: {
+        size: $medium;
+    }
+}
+
+.txt-large {
+    font: {
+        size: $large;
+    }
+}
+
+.txt-big {
+    font: {
+        size: $big;
+    }
+}
+
+.txt-w-normal{
+    font: {
+        weight: 400;
+    }
+}
+
+.txt-w-medium{
+    font: {
+        weight: 500;
+    }
+}
+
+.txt-w-bold{
+    font: {
+        weight: 700;
+    }
+}
+
