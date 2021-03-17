@@ -1,0 +1,35 @@
+@import '../../common/styles/Colors.scss';
+
+.favorites-header {
+    display: flex;
+    align-items: flex-start;
+}
+
+.favorites {
+    display: flex;
+}
+
+.favorites .favorite{
+    margin-right: 25px;
+}
+
+.favorite {
+    padding-top: 15px;
+    width: 160px;
+    height: 160px;
+    background-color: $gray-light;
+    border-radius: 15px;
+}
+
+.favorite h2, .favorite p {
+    margin: 0;
+}
+
+.favoriteWeatherIcon{
+    height: 80px;
+    width: 80px;
+}
+
+.location{
+    height: 30px;
+}
