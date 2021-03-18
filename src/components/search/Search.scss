@@ -21,3 +21,23 @@
 .searchBar::placeholder{
     color: #828282;
 }
+
+.Results-container {
+    width: 250px;
+    background-color: $gray-light;
+    position: absolute;
+    margin-top: 10px;
+    border: 1px solid $gray-border;
+    border-radius: 15px;
+    text-align: left;
+    //padding: 5px 25px;
+}
+
+.searchResultElement {
+    padding: 5px 25px;
+}
+
+.searchResultElement:hover {
+    background-color: $gray-border;
+    cursor: pointer;
+}

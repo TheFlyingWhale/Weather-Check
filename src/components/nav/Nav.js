@@ -3,7 +3,7 @@ import logo from '../../common/images/logo/logo.svg';
 import './Nav.scss';
 import { Search } from '../search/Search';
 
-export const Nav = () => {
+export const Nav = props => {
     return (
         <nav className="navBar">
             <a
@@ -11,7 +11,9 @@ export const Nav = () => {
             >
                 <img src={logo} alt="logo" className="logo" />
             </a>
-            <Search />
+            <div className="search-container">
+                <Search handleSelect={props.handleSelect} results={props.results}/>
+            </div>
         </nav>
     )
 }

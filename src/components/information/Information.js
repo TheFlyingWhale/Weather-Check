@@ -4,13 +4,13 @@ import './Information.scss';
 import '../../common/styles/Text.scss';
 import '../../common/styles/Colors.scss';
 
-export const Information = () => {
+export const Information = props => {
     return (
         <div className="information">
             <img className="weatherIcon" src={weatherIcon} alt="weather" />
             <h1
                 className="txt-big txt-w-medium black"
-            >Herøy</h1>
+            >{props.location.name !== undefined ? props.location.name : 'Herøy'}</h1>
             <div className="details">
                 <div className="detail">
                     <h2

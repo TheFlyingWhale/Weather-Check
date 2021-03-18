@@ -1,18 +1,15 @@
 import React from 'react';
 import { Information } from '../information/Information';
 import { Forecast } from '../forecast/Forecast';
-import { Favorites } from '../favorites/Favorites'
 import './Location.scss';
 
-export const Location = () => {
+export const Location = props => {
+
     return (
         <div>
             <div className="locationContainer">
-                <Information />
+                <Information location={props.location}/>
                 <Forecast />
-            </div>
-            <div className="favoritesContainer">
-                <Favorites />
             </div>
         </div>
     );
