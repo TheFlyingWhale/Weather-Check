@@ -18,7 +18,7 @@ export const Information = props => {
                     >Temperature</h2>
                     <p
                         className="txt-large txt-w-medium gray-dark"
-                    >24 °C</p>
+                    >{props.data.temperature} °C</p>
                 </div>
                 <div className="detail">
                     <h2
@@ -26,7 +26,7 @@ export const Information = props => {
                     >Rainfall</h2>
                     <p
                         className="txt-large txt-w-medium gray-dark"
-                    >0 mm</p>
+                    >{props.data.precipitation} mm</p>
                 </div>
                 <div className="detail">
                     <h2
@@ -34,7 +34,7 @@ export const Information = props => {
                     >Wind</h2>
                     <p
                         className="txt-large txt-w-medium gray-dark"
-                    >2 m/s</p>
+                    >{props.data.windSpeed} m/s</p>
                 </div>
             </div>
         </div>

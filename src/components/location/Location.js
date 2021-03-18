@@ -8,7 +8,7 @@ export const Location = props => {
     return (
         <div>
             <div className="locationContainer">
-                <Information location={props.location}/>
+                <Information location={props.location} data={props.data}/>
                 <Forecast />
             </div>
         </div>

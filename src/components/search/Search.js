@@ -30,8 +30,7 @@ export const Search = (props) => {
             fetch(`${url}${queryParams}${term}${maxRows}${username}`)
                 .then(response => response.json())
                 .then(data => {
-                    data.geonames.forEach(element => setResults(old => [...old, element]))
-                    console.log(data);
+                    data.geonames.forEach(element => setResults(old => [...old, element]));
                     setBlured(false);
                 })
                 .catch(error => {
@@ -39,16 +38,11 @@ export const Search = (props) => {
                     console.log(error);
                 });
         }
-
     }
 
     //handleBlur removes the results panel on input blur
     const handleBlur = () => {
         setBlured(true);
-    }
-
-    const handleFocus = () => {
-        setBlured(false);
     }
 
     return (
