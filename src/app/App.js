@@ -9,7 +9,6 @@ const App = () => {
     const [data, setData] = useState({temperature: undefined, windSpeed: undefined, precipitation: undefined});
 
     const handleSelect = input => {
-      console.log('handleselect');
       const lat = parseFloat(input.lat).toFixed(2);
       const lon = parseFloat(input.lon).toFixed(2);
       const inputLocation = {name: input.name, lat: lat.toString(), lon: lon.toString()};
@@ -34,7 +33,6 @@ const App = () => {
     }
 
     const handleData = object => {
-      console.log(object);
       setData({temperature: object.instant.details.air_temperature, windSpeed: object.instant.details.wind_speed, precipitation: object.next_1_hours.details.precipitation_amount});
     }
 

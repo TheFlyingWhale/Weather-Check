@@ -7,7 +7,6 @@ import './Search.scss';
 export const Result = props => {
 
     const handleClick = () => {
-        console.log(props.name);
         props.handleSelect(props.element);
         props.handleBlur();
     }
