@@ -21,7 +21,7 @@ export const Search = (props) => {
         e.preventDefault();
         setResults([]);
 
-        const url = 'https://api.geonames.org/searchJSON?';
+        const url = 'https://secure.geonames.org/searchJSON?';
         const queryParams = 'q=';
         const maxRows = '&maxRows=10';
         const username = "&username=walberg"
