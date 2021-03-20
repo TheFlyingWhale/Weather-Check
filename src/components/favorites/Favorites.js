@@ -3,7 +3,7 @@ import { Favorite } from './Favorite';
 
 //Icons
 import sun from '../../common/images/weatherIcons/Sun.svg';
-import partiallyCloudy from '../../common/images/weatherIcons/PartiallyCloudy.svg';
+import partiallyCloudy from '../../common/images/weatherIcons/FairSun.svg';
 import cloudy from '../../common/images/weatherIcons/Cloudy.svg';
 import rain from '../../common/images/weatherIcons/Rain.svg';
 //import thunder from '../../common/images/weatherIcons/Thunder.svg'
