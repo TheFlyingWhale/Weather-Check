@@ -103,10 +103,13 @@ import moon from '../images/weatherIcons/Moon.svg';
 //import sleetShowersAndThunderTwilight from '../images/weatherIcons/SleetShowersAndThunderTwilight.svg';
 
 
+//Takes a string as input and returns the correlating image
 export const getSymbol = icon => {
-    console.log(icon);
+    //console.log(icon);
     let weather, timeOfDay;
+    //Check to see if the input is null
     if (icon !== null) {
+        //Splits the input and divides it into weather and timeOfDay
         if (icon.includes('_')) {
             const input = icon.split('_');
             weather = input[0];
@@ -114,16 +117,16 @@ export const getSymbol = icon => {
         } else {
             weather = icon;
         }
-        console.log(`weather: ${weather}. timeOfDay: ${timeOfDay}`);
+        //console.log(`weather: ${weather}. timeOfDay: ${timeOfDay}`);
 
         if (weather.includes('clearsky')) {            //Clearsky
             console.log('includes clearsky');
 
             if (timeOfDay.includes('day')) {             //Day
-                console.log('includes day');
+                //console.log('includes day');
                 return sun;
             } else if (timeOfDay.includes('night')) {    //Night
-                console.log('includes night');
+                //console.log('includes night');
                 return moon;
             } else {                                //Twilight
                 console.log('includes twilight');
