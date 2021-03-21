@@ -1,4 +1,6 @@
 import React from 'react';
+import { getSymbol } from '../../common/scripts/getSymbol';
+
 import weatherIcon from '../../common/images/weatherIcons/Sun.svg'
 import './Information.scss';
 import '../../common/styles/Text.scss';
@@ -7,7 +9,7 @@ import '../../common/styles/Colors.scss';
 export const Information = props => {
     return (
         <div className="information">
-            <img className="weatherIcon" src={weatherIcon} alt="weather" />
+            <img className="weatherIcon" src={getSymbol(props.data.instant.symbol)} alt="weather" />
             <h1
                 className="txt-big txt-w-medium black"
             >{props.location.name !== undefined ? props.location.name : 'Herøy'}</h1>

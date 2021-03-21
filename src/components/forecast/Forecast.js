@@ -30,19 +30,19 @@ export const Forecast = () => {
                     >Morning</p>
                     <p
                         className="txt-small txt-w-normal gray timeOfDay"
-                    >Afternoon</p>
+                    >Noon</p>
                     <p
                         className="txt-small txt-w-normal gray timeOfDay"
                     >Evening</p>
                 </div>
             </div>
             <div className="body-forecast">
-                <Row date="Today 16.March" night={moon} morning={fairSun} afternoon={cloudy} evening={rain}/>
-                <Row date="Monday 17.March" night={thunder} morning={rain} afternoon={rain} evening={fairSun}/>
-                <Row date="Tuesday 18.March" night={moon} morning={fairSun} afternoon={sun} evening={sun}/>
-                <Row date="Wednesday 19.March" night={moon} morning={sun} afternoon={sun} evening={fairSun}/>
-                <Row date="Thursday 20.March" night={cloudy} morning={fairSun} afternoon={fairSun} evening={sun}/>
-                <Row date="Friday 21.March" night={moon} morning={sun} afternoon={sun} evening={sun}/>
+                <Row date="Today 16.March" night={moon} morning={fairSun} noon={cloudy} evening={rain}/>
+                <Row date="Monday 17.March" night={thunder} morning={rain} noon={rain} evening={fairSun}/>
+                <Row date="Tuesday 18.March" night={moon} morning={fairSun} noon={sun} evening={sun}/>
+                <Row date="Wednesday 19.March" night={moon} morning={sun} noon={sun} evening={fairSun}/>
+                <Row date="Thursday 20.March" night={cloudy} morning={fairSun} noon={fairSun} evening={sun}/>
+                <Row date="Friday 21.March" night={moon} morning={sun} noon={sun} evening={sun}/>
             </div>
         </div>
     );

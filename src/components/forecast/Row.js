@@ -11,7 +11,7 @@ export const Row = (props) => {
             <div className="weatherIcons">
                 <img className="icon" alt="icon" src={props.night} />
                 <img className="icon" alt="icon" src={props.morning} />
-                <img className="icon" alt="icon" src={props.afternoon} />
+                <img className="icon" alt="icon" src={props.noon} />
                 <img className="icon" alt="icon" src={props.evening} />
             </div>
         </div>

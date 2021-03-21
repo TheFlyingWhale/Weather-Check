@@ -12,7 +12,7 @@ export const getLocationData = (lat, lon, func) => {
     })
     .then(response => response.json())
     .then(data => {
-        //console.log(data);
+        console.log(data);
          func(digestLocationData(data));
     })
     .catch(error => {
