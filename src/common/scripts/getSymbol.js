@@ -1,106 +1,111 @@
 //Clear Sky
-import sun from '../images/weatherIcons/Sun.svg';
-import moon from '../images/weatherIcons/Moon.svg';
-//import twilight from '../images/weatherIcons/Twilight.svg';
+import sun from '../images/updatedWeatherIcons/clearDay.svg';
+import moon from '../images/updatedWeatherIcons/clearNight.svg';
+import twilight from '../images/updatedWeatherIcons/clearTwilight.svg';
 
 //Fair
-//import fairSun from '../images/weatherIcons/FairSun.svg';
-//import fairMoon from '../images/weatherIcons/FairMoon.svg';
-//import fairTwilight from '../images/weatherIcons/FairTwilight.svg';
+import fairDay from '../images/updatedWeatherIcons/fairDay.svg';
+import fairNight from '../images/updatedWeatherIcons/fairNight.svg';
+//import fairTwilight from '../images/updatedWeatherIcons/FairTwilight.svg';
 
 //Cloudy
-//import cloudy from '../images/weatherIcons/Cloudy.svg';
+import cloudy from '../images/updatedWeatherIcons/cloudy.svg';
 
 //Partly
-//import partlySun from '../images/weatherIcons/PartlySun.svg';
-//import partlyMoon from '../images/weatherIcons/PartlyMoon.svg';
-//import partlyTwilight from '../images/weatherIcons/PartlyTwilight';
+import partlyDay from '../images/updatedWeatherIcons/partlyDay.svg';
+import partlyNight from '../images/updatedWeatherIcons/partlyNight.svg';
+//import partlyTwilight from '../images/updatedWeatherIcons/PartlyTwilight';
 
 //Fog
-//import fog from '../images/weatherIcons/Fog.svg';
+//import fog from '../images/updatedupdatedWeatherIcons/fog.svg';
+import fog from '../images/updatedWeatherIcons/fog.svg';
 
 //Rain
-//import lightRain from '../images/weatherIcons/LightRain.svg';
-//import lightRainAndThunder from '../images/weatherIcons/LightRainAndThunder.svg';
-//import lightRainShowersSun from '../images/weatherIcons/LightrainShowersSun.svg';
-//import lightRainShowersMoon from '../images/weatherIcons/LightRainshowersMoon.svg';
-//import lightRainShowersTwilight from '../images/weatherIcons/LightRainShowersTwilight.svg';
-//import lightRainShowersAndThunderSun from '../images/weatherIcons/LightRainShowersAndThunderSun.svg';
-//import lightRainShowersAndThunderMoon from '../images/weatherIcons/LightRainShowersAndThunderMoon.svg';
-//import lightRainShowersAndThunderTwilight from '../images/weatherIcons/LightRainShowersAndThunderTwilight';
-//import heavyRain from '../images/weatherIcons/HeavyRain.svg';
-//import heavyRainAndThunder from '../images/weatherIcons/HeavyRainAndThunder';
-//import heavyRainShowersSun from '../images/weatherIcons/HeavyRainShowersSun';
-//import heavyRainShowersMoon from '../images/weatherIcons/HeavyrainShowersMoon';
-//import heavyRainShowersTwilight from '../images/weatherIcons/HeavyRainShowersTwilight';
-//import heavyRainShowersAndThunderSun from '../images/weatherIcons/HeavyRainShowersAndThunderSun.svg';
-//import heavyRainShowersAndThunderMoon from '../images/weatherIcons/HeavyRainShowersAndThunderMoon.svg';
-//import heavyRainShowersAndThunderTwilight from '../images/weatherIcons/HeavyRainShowersAndThunderTwilight';
-//import rain from '../images/weatherIcons/Rain.svg';
-//import rainAndThunder from '../images/weatherIcons/RainAndThunder.svg';
-//import rainShowersSun from '../images/weatherIcons/RainShowersSun.svg';
-//import rainShowersMoon from '../images/weatherIcons/RainShowersMoon.svg';
-//import rainShowersTwilight from '../images/weatherIcons/RainShowersTwilight.svg';
-//import rainShowersAndThunderSun from '../images/weatherIcons/RainShoweresAndThunderSun.svg';
-//import rainShowersAndThunderMoon from '../images/weatherIcons/RainShowersAndThunderMoon.svg';
-//import rainShowersAndThunderTwilight from '../images/weatherIcons/RainShowersAndThunderTwilight';
+    //Light
+import lightRain from '../images/updatedWeatherIcons/lightRain.svg';
+import lightRainAndThunder from '../images/updatedWeatherIcons/lightRainAndThunder.svg';
+import lightRainShowersDay from '../images/updatedWeatherIcons/lightRainShowersDay.svg';
+import lightRainShowersNight from '../images/updatedWeatherIcons/lightRainShowersNight.svg';
+//import lightRainShowersTwilight from '../images/updatedWeatherIcons/LightRainShowersTwilight.svg';
+import lightRainShowersAndThunderDay from '../images/updatedWeatherIcons/lightRainShowersAndThunderDay.svg';
+import lightRainShowersAndThunderNight from '../images/updatedWeatherIcons/lightRainShowersAndThunderNight.svg';
+//import lightRainShowersAndThunderTwilight from '../images/updatedWeatherIcons/LightRainShowersAndThunderTwilight';
+    //Normal
+import rain from '../images/updatedWeatherIcons/rain.svg';
+import rainAndThunder from '../images/updatedWeatherIcons/rainAndThunder.svg';
+import rainShowersDay from '../images/updatedWeatherIcons/rainShowersDay.svg';
+import rainShowersNight from '../images/updatedWeatherIcons/rainShowersNight.svg';
+//import rainShowersTwilight from '../images/updatedWeatherIcons/RainShowersTwilight.svg';
+import rainShowersAndThunderDay from '../images/updatedWeatherIcons/rainShowersAndThunderDay.svg';
+import rainShowersAndThunderNight from '../images/updatedWeatherIcons/rainShowersAndThunderNight.svg';
+//import rainShowersAndThunderTwilight from '../images/updatedWeatherIcons/RainShowersAndThunderTwilight';
+    //Heavy
+import heavyRain from '../images/updatedWeatherIcons/heavyRain.svg';
+import heavyRainAndThunder from '../images/updatedWeatherIcons/heavyRainAndThunder.svg';
+import heavyRainShowersDay from '../images/updatedWeatherIcons/heavyRainShowersDay.svg';
+import heavyRainShowersNight from '../images/updatedWeatherIcons/heavyRainShowersNight.svg';
+//import heavyRainShowersTwilight from '../images/updatedWeatherIcons/HeavyRainShowersTwilight';
+import heavyRainShowersAndThunderDay from '../images/updatedWeatherIcons/heavyRainShowersAndThunderDay.svg';
+import heavyRainShowersAndThunderNight from '../images/updatedWeatherIcons/heavyRainShowersAndThunderNight.svg';
+//import heavyRainShowersAndThunderTwilight from '../images/updatedWeatherIcons/HeavyRainShowersAndThunderTwilight';
 
 //Snow
-//import heavySnow from '../images/weatherIcons/HeavySnow.svg';
-//import heavySnowAndThunderSun from '../images/weatherIcons/HeavySnowAndThunderSun.svg';
-//import heavySnowAndThunderMoon from '../images/weatherIcons/HeavySnowAndThunderMoon.svg';
-//import heavySnowAndThunderTwilight from '../images/weatherIcons/HeavySnowAndThunderTwilight.svg';
-//import heavySnowShowersSun from '../images/weatherIcons/HeavySnowShowersMoon.svg';
-//import heavySnowShowersMoon from '../images/weatherIcons/HeavySnowShowersMoon.svg';
-//import heavySnowShowersTwilight from '../images/weatherIcons/HeavySnowShowersTwilight.svg';
-//import heavySnowShowersAndThunderSun from '../images/weatherIcons/HeavySnowShowersAndThunderSun.svg';
-//import heavySnowShowersAndThunderMoon from '../images/weatherIcons/HeavySnowShowersAndThunderMoon.svg';
-//import heavySnowShowersAndThunderTwilight from '../images/weatherIcons/HeavySnowShowersAndThunderTwilight';
-//import lightSnow from '../images/weatherIcons/LightSnow.svg';
-//import lightSnowAndThunder from '../images/weatherIcons/LightSnowAndThunder.svg';
-//import lightSnowShowersSun from '../images/weatherIcons/LightSnowShowersSun.svg';
-//import lightSnowShowersMoon from '../images/weatherIcons/LightSnowShowersMoon.svg';
-//import lightSnowShowersTwilight from '../images/weatherIcons/LightSnowShowersTwilight.svg';
-//import lightSnowShowersAndThunderSun from '../images/weatherIcons/LightSnowShowersAndThunderSun.svg';
-//import lightSnowShowersAndThunderMoon from '../images/weatherIcons/LightSnowShowersAndthunderMoon.svg';
-//import lightSnowShoweresAndThunderTwilight from '../images/weatherIconsLightSnowShowersAndThunderTwilight.svg';
-//import snow from '../images/weatherIcons/Snow.svg';
-//import snowAndThunder from '../images/weatherIcons/SnowAndThunder.svg';
-//import snowShowersSun from '../images/weatherIcons/SnowShowersSun.svg';
-//import snowShowersMoon from '../images/weatherIcons/SnowShowersMoon.svg';
-//import snowShowersTwilight from '../images/weatherIcons/SnowShowersTwilight.svg';
-//import snowShowersAndThunderSun from '../images/weatherIcons/SnowShowersAndThunderSun.svg';
-//import snowShowersAndThunderMoon from '../images/weatherIcons/SnowShowersAndThunderMoon.svg';
-//import snowShowersAndThunderTwilight from '../images/weatherIcons/SnowShowersAndThunderTwilight.svg';
+    //Light
+import lightSnow from '../images/updatedWeatherIcons/lightSnow.svg';
+import lightSnowAndThunder from '../images/updatedWeatherIcons/lightSnowAndThunder.svg';
+import lightSnowShowersDay from '../images/updatedWeatherIcons/lightSnowShowersDay.svg';
+import lightSnowShowersNight from '../images/updatedWeatherIcons/lightSnowShowersNight.svg';
+//import lightSnowShowersTwilight from '../images/updatedWeatherIcons/LightSnowShowersTwilight.svg';
+import lightSnowShowersAndThunderDay from '../images/updatedWeatherIcons/lightSnowShowersAndThunderDay.svg';
+import lightSnowShowersAndThunderNight from '../images/updatedWeatherIcons/lightSnowShowersAndThunderNight.svg';
+//import lightSnowShoweresAndThunderTwilight from '../images/updatedWeatherIconsLightSnowShowersAndThunderTwilight.svg';
+    //Normal
+import snow from '../images/updatedWeatherIcons/snow.svg';
+import snowAndThunder from '../images/updatedWeatherIcons/snowAndThunder.svg';
+import snowShowersDay from '../images/updatedWeatherIcons/snowShowersDay.svg';
+import snowShowersNight from '../images/updatedWeatherIcons/snowShowersNight.svg';
+//import snowShowersTwilight from '../images/updatedWeatherIcons/SnowShowersTwilight.svg';
+import snowShowersAndThunderDay from '../images/updatedWeatherIcons/snowShowersAndThunderDay.svg';
+import snowShowersAndThunderNight from '../images/updatedWeatherIcons/snowShowersAndThunderNight.svg';
+//import snowShowersAndThunderTwilight from '../images/updatedWeatherIcons/SnowShowersAndThunderTwilight.svg';
+    //Heavy
+import heavySnow from '../images/updatedWeatherIcons/heavySnow.svg';
+import heavySnowAndThunder from '../images/updatedWeatherIcons/heavySnowAndThunder.svg';
+import heavySnowShowersDay from '../images/updatedWeatherIcons/heavySnowShowersDay.svg';
+import heavySnowShowersNight from '../images/updatedWeatherIcons/heavySnowShowersNight.svg';
+//import heavySnowShowersTwilight from '../images/updatedWeatherIcons/HeavySnowShowersTwilight.svg';
+import heavySnowShowersAndThunderDay from '../images/updatedWeatherIcons/heavySnowShowersAndThunderDay.svg';
+import heavySnowShowersAndThunderNight from '../images/updatedWeatherIcons/heavySnowShowersAndThunderNight.svg';
+//import heavySnowShowersAndThunderTwilight from '../images/updatedWeatherIcons/HeavySnowShowersAndThunderTwilight';
 
 //Sleet
-//import heavySleet from '../images/weatherIcons/HeavySleet.svg';
-//import heavySleetAndThunder from '../images/weatherIcons/HeavySleetAndThunder.svg';
-//import heavySleetShowersSun from '../images/weatherIcons/HeavySleetShowersSun.svg';
-//import heavySleetShowersMoon from '../images/weatherIcons/HeavySleetShowersMoon.svg';
-//import heavySleetShowersTwilight from '../images/weatherIcons/HeavySleetShowersTwilight.svg';
-//import heavySleetShowersAndThunderSun from '../images/weatherIcons/HeavySleetShowersAndThunderSun.svg';
-//import heavySleetShowersAndThunderMoon from '../images/weatherIcons/HeavySleetShowersAndThunderMoon.svg';
-//import heavySleetShowersAndThunderTwilight from '../images/weatherIcons/heavySleetShowersAndThunderTwilight.svg';
-
-
-//import lightSleetShowersAndThunderSun from '../images/weatherIcons/LightSleetShowersAndThunderSun.svg';
-//import lightSleetShowersAndThunderMoon from '../images/weatherIcons/LightSleetShowersAndThunderMoon.svg';
-//import lightSleetShowersAndThunderTwilight from '../images/weatherIconsLightSleetShowersAndThunderTwilight.svg';
-//import lightSleet from '../images/weatherIcons/LightSleet.svg'
-//import lightSleetAndThunder from '../images/weatherIcons/LightSleetAndThunder.svg';
-//import lightSleetShowersSun from '../images/weatherIcons/LightSleetShowersSun.svg';
-//import lightSleetShowersMoon from '../images/weatherIcons/LightSleetShowersMoon.svg';
-//import lightSleetShowersTwilight from '../images/weatherIcons/LightSleetShowersTwilight.svg';
-
-//import sleet from '../images/weatherIcons/Sleet.svg';
-//import sleetAndThunder from '../images/weatherIcons/SleetAndThunder.svg';
-//import sleetShowersSun from '../images/weatherIcons/SleetShowersSun.svg';
-//import sleetShowersMoon from '../images/weatherIcons/SleetShowersMoon.svg';
-//import sleetShowersTwilight from '../images/weatherIcons/SleetShowersTwilight.svg';
-//import sleetShowersAndThunderSun from '../images/weatherIcons/SleetShowersAndThunder.svg';
-//import sleetShowersAndThunderMoon from '../images/weatherIcons/SleetShowersAndThunderMoon.svg';
-//import sleetShowersAndThunderTwilight from '../images/weatherIcons/SleetShowersAndThunderTwilight.svg';
+    //Light
+import lightSleet from '../images/updatedWeatherIcons/lightSleet.svg'
+import lightSleetAndThunder from '../images/updatedWeatherIcons/lightSleetAndThunder.svg';    
+import lightSleetShowersAndThunderDay from '../images/updatedWeatherIcons/lightSleetShowersAndThunderDay.svg';
+import lightSleetShowersAndThunderNight from '../images/updatedWeatherIcons/lightSleetShowersAndThunderNight.svg';
+//import lightSleetShowersAndThunderTwilight from '../images/updatedWeatherIconsLightSleetShowersAndThunderTwilight.svg';
+import lightSleetShowersDay from '../images/updatedWeatherIcons/lightSleetShowersDay.svg';
+import lightSleetShowersNight from '../images/updatedWeatherIcons/lightSleetShowersNight.svg';
+//import lightSleetShowersTwilight from '../images/updatedWeatherIcons/LightSleetShowersTwilight.svg';    
+    //Normal
+import sleet from '../images/updatedWeatherIcons/sleet.svg';
+import sleetAndThunder from '../images/updatedWeatherIcons/sleetAndThunder.svg';
+import sleetShowersDay from '../images/updatedWeatherIcons/sleetShowersDay.svg';
+import sleetShowersNight from '../images/updatedWeatherIcons/sleetShowersNight.svg';
+//import sleetShowersTwilight from '../images/updatedWeatherIcons/SleetShowersTwilight.svg';
+import sleetShowersAndThunderDay from '../images/updatedWeatherIcons/sleetShowersAndThunderDay.svg';
+import sleetShowersAndThunderNight from '../images/updatedWeatherIcons/sleetShowersAndThunderNight.svg';
+//import sleetShowersAndThunderTwilight from '../images/updatedWeatherIcons/SleetShowersAndThunderTwilight.svg';
+    //Heavy
+import heavySleet from '../images/updatedWeatherIcons/heavySleet.svg';
+import heavySleetAndThunder from '../images/updatedWeatherIcons/heavySleetAndThunder.svg';
+import heavySleetShowersDay from '../images/updatedWeatherIcons/heavySleetShowersDay.svg';
+import heavySleetShowersNight from '../images/updatedWeatherIcons/heavySleetShowersNight.svg';
+//import heavySleetShowersTwilight from '../images/updatedWeatherIcons/HeavySleetShowersTwilight.svg';
+import heavySleetShowersAndThunderDay from '../images/updatedWeatherIcons/heavySleetShowersAndThunderDay.svg';
+import heavySleetShowersAndThunderNight from '../images/updatedWeatherIcons/heavySleetShowersAndThunderNight.svg';
+//import heavySleetShowersAndThunderTwilight from '../images/updatedWeatherIcons/heavySleetShowersAndThunderTwilight.svg';
 
 
 //Takes a string as input and returns the correlating image
@@ -120,7 +125,7 @@ export const getSymbol = icon => {
         //console.log(`weather: ${weather}. timeOfDay: ${timeOfDay}`);
 
         if (weather.includes('clearsky')) {            //Clearsky
-            console.log('includes clearsky');
+            //console.log('includes clearsky');
 
             if (timeOfDay.includes('day')) {             //Day
                 //console.log('includes day');
@@ -129,274 +134,355 @@ export const getSymbol = icon => {
                 //console.log('includes night');
                 return moon;
             } else {                                //Twilight
-                console.log('includes twilight');
+                //console.log('includes twilight');
+                return twilight;
             }
 
         } else if (weather.includes('fair')) {         //Fair
-            console.log('includes fair');
+            //console.log('includes fair');
 
             if (timeOfDay.includes('day')) {             //Day
-                console.log('includes day');
+                //console.log('includes day');
+                return fairDay;
             } else if (timeOfDay.includes('night')) {    //Night
-                console.log('includes night');
+                //console.log('includes night');
+                return fairNight;
             } else {                                //Twilight
-                console.log('includes twilight');
+                //console.log('includes twilight');
+                return fairDay;
             }
 
         } else if (weather.includes('cloudy')) {       //Cloudy
-            console.log('includes cloudy');
+            //console.log('includes cloudy');
+            return cloudy;
 
         } else if (weather.includes('partly')) {       //Partly
             console.log('includes partly');
 
             if (timeOfDay.includes('day')) {             //Day
-                console.log('includes day');
+                //console.log('includes day');
+                return partlyDay;
             } else if (timeOfDay.includes('night')) {    //Night
-                console.log('includes night');
+                //console.log('includes night');
+                return partlyNight;
             } else {                                //Twilight
-                console.log('includes twilight');
+                //console.log('includes twilight');
+                return partlyDay;
             }
 
         } else if (weather.includes('fog')) {          //Fog
-            console.log('includes fog');
+            //console.log('includes fog');
+            return fog;
 
         } else if (weather.includes('rain')) {         //Rain
-            console.log('includes rain');
+            //console.log('includes rain');
 
             if (weather.includes('light')) {           //Light
-                console.log('includes light');
+                //console.log('includes light');
                 if (weather.includes('showers')) {
                     if (weather.includes('thunder')) {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Light Rain Showers And Thunder Day');
+                            //console.log('<!-- Light Rain Showers And Thunder Day');
+                            return lightRainShowersAndThunderDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Light Rain Showers And Thunder Night');
+                            //console.log('<!-- Light Rain Showers And Thunder Night');
+                            return lightRainShowersAndThunderNight;
                         } else {
-                            console.log('<!-- Light Rain Showers And Thunder Twilight');
+                            //console.log('<!-- Light Rain Showers And Thunder Twilight');
+                            return lightRainShowersAndThunderDay;
                         }
                     } else {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Light Rain Showers Day');
+                            //console.log('<!-- Light Rain Showers Day');
+                            return lightRainShowersDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Light Rain Showers Night');
+                            //console.log('<!-- Light Rain Showers Night');
+                            return lightRainShowersNight;
                         } else {
-                            console.log('<!-- Light Rain Showers Twilight');
+                            //console.log('<!-- Light Rain Showers Twilight');
+                            return lightRainShowersDay;
                         }
                     }
                 } if (weather.includes('thunder')) {
-                    console.log('<!-- Light Rain And Thunder');
+                    //console.log('<!-- Light Rain And Thunder');
+                    return lightRainAndThunder;
                 } else {
-                    console.log('<!-- Light Rain');
+                    //console.log('<!-- Light Rain');
+                    return lightRain;
                 }
             } else if (weather.includes('heavy')) {    //Heavy
-                console.log('includes heavy');
+                //console.log('includes heavy');
                 if (weather.includes('showers')) {
                     if (weather.includes('thunder')) {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Heavy Rain Showers And Thunder Day');
+                            //console.log('<!-- Heavy Rain Showers And Thunder Day');
+                            return heavyRainShowersAndThunderDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Heavy Rain Showers And Thunder Night');
+                            //console.log('<!-- Heavy Rain Showers And Thunder Night');
+                            return heavyRainShowersAndThunderNight;
                         } else {
-                            console.log('<!-- Heavy Rain Showers And Thunder Twilight');
+                            //console.log('<!-- Heavy Rain Showers And Thunder Twilight');
+                            return heavyRainShowersAndThunderDay;
                         }
                     } else {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Heavy Rain Showers Day');
+                            //console.log('<!-- Heavy Rain Showers Day');
+                            return heavyRainShowersDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Heavy Rain Showers Night');
+                            //console.log('<!-- Heavy Rain Showers Night');
+                            return heavyRainShowersNight;
                         } else {
-                            console.log('<!-- Heavy Rain Showers Twilight');
+                            //console.log('<!-- Heavy Rain Showers Twilight');
+                            return heavyRainShowersDay;
                         }
                     }
                 } else if (weather.includes('thunder')) {
-                    console.log('<!-- Heavy Rain And Thunder');
+                    //console.log('<!-- Heavy Rain And Thunder');
+                    return heavyRainAndThunder;
                 } else {
-                    console.log('<!-- Heavy Rain');
+                    //console.log('<!-- Heavy Rain');
+                    return heavyRain;
                 }
             } else {                                //Normal
-                console.log('includes neighter light or heavy');
+                //console.log('includes neighter light or heavy');
                 if (weather.includes('showers')) {
                     if (weather.includes('thunder')) {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Rain Showers And Thunder Day');
+                            //console.log('<!-- Rain Showers And Thunder Day');
+                            return rainShowersAndThunderDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Rain Showers And Thunder Night');
+                            //console.log('<!-- Rain Showers And Thunder Night');
+                            return rainShowersAndThunderNight;
                         } else {
-                            console.log('<!-- Rain Showers And Thunder Twilight');
+                            //console.log('<!-- Rain Showers And Thunder Twilight');
+                            return rainShowersAndThunderDay;
                         }
                     } else {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Rain Showers Day');
+                            //console.log('<!-- Rain Showers Day');
+                            return rainShowersDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Rain Showers Night');
+                            //console.log('<!-- Rain Showers Night');
+                            return rainShowersNight;
                         } else {
-                            console.log('<!-- Rain Showers Twilight');
+                            //console.log('<!-- Rain Showers Twilight');
+                            return rainShowersDay;
                         }
                     }
                 } else if (weather.includes('thunder')) {
-                    console.log('<!-- Rain And Thunder');
+                    //console.log('<!-- Rain And Thunder');
+                    return rainAndThunder;
                 } else {
-                    console.log('<!-- Rain');
+                    //console.log('<!-- Rain');
+                    return rain;
                 }
             }
 
         } else if (weather.includes('snow')) {         //Snow
-            console.log('includes snow');
+            //console.log('includes snow');
 
             if (weather.includes('light')) {           //Light
-                console.log('includes light');
+                //console.log('includes light');
                 if (weather.includes('showers')) {
                     if (weather.includes('thunder')) {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Light Snow Showers And Thunder Day');
+                            //console.log('<!-- Light Snow Showers And Thunder Day');
+                            return lightSnowShowersAndThunderDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Light Snow Showers And Thunder Night');
+                            //console.log('<!-- Light Snow Showers And Thunder Night');
+                            return lightSnowShowersAndThunderNight;
                         } else {
-                            console.log('<!-- Light Snow Showers And Thunder Twilight');
+                            //console.log('<!-- Light Snow Showers And Thunder Twilight');
+                            return lightSnowShowersAndThunderDay;
                         }
                     } else {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Light Snow Showers Day');
+                            //console.log('<!-- Light Snow Showers Day');
+                            return lightSnowShowersDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Light Snow Showers Night');
+                            //console.log('<!-- Light Snow Showers Night');
+                            return lightSnowShowersNight;
                         } else {
-                            console.log('<!-- Light Snow Showers Twilight');
+                            //console.log('<!-- Light Snow Showers Twilight');
+                            return lightSnowShowersDay;
                         }
                     }
                 } else if (weather.includes('thunder')) {
-                    console.log('<!-- Light Snow And Thunder');
+                    //console.log('<!-- Light Snow And Thunder');
+                    return lightSnowAndThunder;
                 } else {
-                    console.log('<!-- Light Snow');
+                    //console.log('<!-- Light Snow');
+                    return lightSnow;
                 }
             } else if (weather.includes('heavy')) {    //Heavy
-                console.log('includes heavy');
+                //console.log('includes heavy');
                 if (weather.includes('showers')) {
                     if (weather.includes('thunder')) {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Heavy Snow Showers And Thunder Day');
+                            //console.log('<!-- Heavy Snow Showers And Thunder Day');
+                            return heavySnowShowersAndThunderDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Heavy Snow Showers And Thunder Night');
+                            //console.log('<!-- Heavy Snow Showers And Thunder Night');
+                            return heavySnowShowersAndThunderNight;
                         } else {
-                            console.log('<!-- Heavy Snow Showers And Thunder Twilight');
+                            //console.log('<!-- Heavy Snow Showers And Thunder Twilight');
+                            return heavySnowShowersAndThunderDay;
                         }
                     } else {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Heavy Snow Showers Day');
+                            //console.log('<!-- Heavy Snow Showers Day');
+                            return heavySnowShowersDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Heavy Snow Showers Night');
+                            //console.log('<!-- Heavy Snow Showers Night');
+                            return heavySnowShowersNight;
                         } else {
-                            console.log('<!-- Heavy Snow Showers Twilight');
+                            //console.log('<!-- Heavy Snow Showers Twilight');
+                            return heavySnowShowersDay;
                         }
                     }
                 } else if (weather.includes('thunder')) {
-                    console.log('<!-- Heavy Snow And Thunder');
+                    //console.log('<!-- Heavy Snow And Thunder');
+                    return heavySnowAndThunder;
                 } else {
-                    console.log('<!-- Heavy Snow');
+                    //console.log('<!-- Heavy Snow');
+                    return heavySnow;
                 }
             } else {                                //Normal
-                console.log('includes neighter light or heavy');
+                //console.log('includes neighter light or heavy');
                 if (weather.includes('showers')) {
                     if (weather.includes('thunder')) {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Snow Showers And Thunder Day');
+                            //console.log('<!-- Snow Showers And Thunder Day');
+                            return snowShowersAndThunderDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Snow Showers And Thunder Night');
+                            //console.log('<!-- Snow Showers And Thunder Night');
+                            return snowShowersAndThunderNight;
                         } else {
-                            console.log('<!-- Snow Showers And Thunder Twilight');
+                            //console.log('<!-- Snow Showers And Thunder Twilight');
+                            return snowShowersAndThunderDay;
                         }
                     } else {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Snow Showers Day');
+                            //console.log('<!-- Snow Showers Day');
+                            return snowShowersDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Snow Showers Night');
+                            //console.log('<!-- Snow Showers Night');
+                            return snowShowersNight;
                         } else {
-                            console.log('<!-- Snow Showers Twilight');
+                            //console.log('<!-- Snow Showers Twilight');
+                            return snowShowersDay;
                         }
                     }
                 } else if (weather.includes('thunder')) {
-                    console.log('<!-- Snow And Thunder');
+                    //console.log('<!-- Snow And Thunder');
+                    return snowAndThunder;
                 } else {
-                    console.log('<!-- Snow');
+                    //console.log('<!-- Snow');
+                    return snow;
                 }
             }
 
         } else if (weather.includes('sleet')) {        //Sleet
-            console.log('includes sleet');
+            //console.log('includes sleet');
 
             if (weather.includes('light')) {           //Light
-                console.log('includes light');
+                //console.log('includes light');
                 if (weather.includes('showers')) {
                     if (weather.includes('thunder')) {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Light Sleet Showers And Thunder Day');
+                            //console.log('<!-- Light Sleet Showers And Thunder Day');
+                            return lightSleetShowersAndThunderDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Light Sleet Showers And Thunder Night');
+                            //console.log('<!-- Light Sleet Showers And Thunder Night');
+                            return lightSleetShowersAndThunderNight;
                         } else {
-                            console.log('<!-- Light Sleet Showers And Thunder Twilight');
+                            //console.log('<!-- Light Sleet Showers And Thunder Twilight');
+                            return lightSleetShowersAndThunderDay;
                         }
                     } else {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Light Sleet Showers Day');
+                            //console.log('<!-- Light Sleet Showers Day');
+                            return lightSleetShowersDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Light Sleet Showers Night');
+                            //console.log('<!-- Light Sleet Showers Night');
+                            return lightSleetShowersNight;
                         } else {
-                            console.log('<!-- Light Sleet Showers Twilight');
+                            //console.log('<!-- Light Sleet Showers Twilight');
+                            return lightSleetShowersDay;
                         }
                     }
                 } else if (weather.includes('thunder')) {
-                    console.log('<!-- Light Sleet And Thunder');
+                    //console.log('<!-- Light Sleet And Thunder');
+                    return lightSleetAndThunder;
                 } else {
-                    console.log('<!-- Light Sleet');
+                    //console.log('<!-- Light Sleet');
+                    return lightSleet;
                 }
             } else if (weather.includes('heavy')) {    //Heavy
-                console.log('includes heavy');
+                //console.log('includes heavy');
                 if (weather.includes('showers')) {
                     if (weather.includes('thunder')) {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Heavy Sleet Showers And Thunder Day');
+                            //console.log('<!-- Heavy Sleet Showers And Thunder Day');
+                            return heavySleetShowersAndThunderDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Heavy Sleet Showers And Thunder Night');
+                            //console.log('<!-- Heavy Sleet Showers And Thunder Night');
+                            return heavySleetShowersAndThunderNight;
                         } else {
-                            console.log('<!-- Heavy Sleet Showers And Thunder Twilight');
+                            //console.log('<!-- Heavy Sleet Showers And Thunder Twilight');
+                            return heavySleetShowersAndThunderDay;
                         }
                     } else {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Heavy Sleet Showers Day');
+                            //console.log('<!-- Heavy Sleet Showers Day');
+                            return heavySleetShowersDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Heavy Sleet Showers Night');
+                            //console.log('<!-- Heavy Sleet Showers Night');
+                            return heavySleetShowersNight;
                         } else {
-                            console.log('<!-- Heavy Sleet Showers Twilight');
+                            //console.log('<!-- Heavy Sleet Showers Twilight');
+                            return heavySleetShowersDay;
                         }
                     }
                 } else if (weather.includes('thunder')) {
-                    console.log('<!-- Heavy Sleet And Thunder');
+                    //console.log('<!-- Heavy Sleet And Thunder');
+                    return heavySleetAndThunder;
                 } else {
-                    console.log('<!-- Heavy Sleet');
+                    //console.log('<!-- Heavy Sleet');
+                    return heavySleet;
                 }
             } else {                                //Normal
-                console.log('includes neighter light or heavy');
+                //console.log('includes neighter light or heavy');
                 if (weather.includes('showers')) {
                     if (weather.includes('thunder')) {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Sleet Showers And Thunder Day');
+                            //console.log('<!-- Sleet Showers And Thunder Day');
+                            return sleetShowersAndThunderDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Sleet Showers And Thunder Night');
+                            //console.log('<!-- Sleet Showers And Thunder Night');
+                            return sleetShowersAndThunderNight;
                         } else {
-                            console.log('<!-- Sleet Showers And Thunder Twilight');
+                            //console.log('<!-- Sleet Showers And Thunder Twilight');
+                            return sleetShowersAndThunderDay;
                         }
                     } else {
                         if (timeOfDay.includes('day')) {
-                            console.log('<!-- Sleet Showers Day');
+                            //console.log('<!-- Sleet Showers Day');
+                            return sleetShowersDay;
                         } else if (timeOfDay.includes('night')) {
-                            console.log('<!-- Sleet Showers Night');
+                            //console.log('<!-- Sleet Showers Night');
+                            return sleetShowersNight;
                         } else {
-                            console.log('<!-- Sleet Showers Twilight');
+                            //console.log('<!-- Sleet Showers Twilight');
+                            return sleetShowersDay;
                         }
                     }
                 } else if (weather.includes('thunder')) {
-                    console.log('<!-- Sleet And Thunder');
+                    //console.log('<!-- Sleet And Thunder');
+                    return sleetAndThunder;
                 } else {
                     console.log('<!-- Sleet');
+                    return sleet;
                 }
             }
 

@@ -65,3 +65,7 @@ export const dataModel = {
         }
     }
 }
+/*
+    <Favorite location="New York City" lalo={[40.71, -74.01]} />
+    <Favorite location="Beijing" lalo={[39.91, 116.40]}/>
+*/
