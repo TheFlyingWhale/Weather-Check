@@ -1,14 +1,6 @@
 import React from 'react';
 import { Favorite } from './Favorite';
 
-//Icons
-import sun from '../../common/images/weatherIcons/Sun.svg';
-import partiallyCloudy from '../../common/images/weatherIcons/FairSun.svg';
-import cloudy from '../../common/images/weatherIcons/Cloudy.svg';
-import rain from '../../common/images/weatherIcons/Rain.svg';
-//import thunder from '../../common/images/weatherIcons/Thunder.svg'
-//import moon from '../../common/images/weatherIcons/Moon.svg'
-
 //Css
 import './Favorites.scss';
 import '../../common/styles/Text.scss';

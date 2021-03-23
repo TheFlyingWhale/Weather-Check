@@ -9,7 +9,7 @@ export const Location = props => {
         <div>
             <div className="locationContainer">
                 <Information location={props.location} data={props.data}/>
-                <Forecast />
+                <Forecast data={props.data}/>
             </div>
         </div>
     );

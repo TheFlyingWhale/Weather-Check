@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Results } from './Results';
 import './Search.scss';
 import '../../common/styles/Text.scss';
+import { fetchLocation } from '../../common/scripts/apiCalls';
 
 export const Search = (props) => {
     const [term, setTerm] = useState('');
@@ -16,45 +17,34 @@ export const Search = (props) => {
         }
     }
 
-    //handleSearch takes care of fetching results based on the input
-    const handleSearch = e => {
-        e.preventDefault();
-        setResults([]);
-
-        const url = 'https://secure.geonames.org/searchJSON?';
-        const queryParams = 'q=';
-        const maxRows = '&maxRows=10';
-        const username = "&username=walberg"
-
-        if (term !== '') {
-            fetch(`${url}${queryParams}${term}${maxRows}${username}`)
-                .then(response => response.json())
-                .then(data => {
-                    data.geonames.forEach(element => setResults(old => [...old, element]));
-                    setBlured(false);
-                })
-                .catch(error => {
-                    console.log('An error occured in Search.js');
-                    console.log(error);
-                });
-        }
-    }
-
     //handleBlur removes the results panel on input blur
     const handleBlur = () => {
+        //console.log(`Blured: ${blured}`);
         setBlured(true);
     }
+
+    const deactivateBlur = () => {
+        //console.log(`Blured: ${blured}`);
+        setBlured(false);
+    }
+
+    useEffect(() => {
+        //console.log('effect triggered');
+        fetchLocation(term, setResults, setBlured);
+    },[term]);
 
     return (
         <div>
             <div className="inputHolder">
-                <form onSubmit={handleSearch}>
+                <form>
                     <input
                         type="text"
                         className="searchBar txt-normal"
                         placeholder="Search"
                         onChange={handleChange}
                         value={term}
+                        
+                        onFocus={deactivateBlur}
                     />
                 </form>
             </div>
@@ -63,6 +53,7 @@ export const Search = (props) => {
                 handleBlur={handleBlur}
                 results={results}
                 blured={blured}
+                term={term}
             />
         </div>
     )

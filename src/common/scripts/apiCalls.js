@@ -12,11 +12,49 @@ export const getLocationData = (lat, lon, func) => {
     })
     .then(response => response.json())
     .then(data => {
-        console.log(data);
+        //console.log(data);
          func(digestLocationData(data));
     })
     .catch(error => {
         console.log('An error occured in getLocationData()');
         console.log(error);
     })
+}
+
+export const fetchLocation = (term, setResults, setBlured) => {
+    //console.log(term);
+    setResults([]);
+
+    const url = 'https://secure.geonames.org/searchJSON?';
+    const queryParams = 'q=';
+    const maxRows = '&maxRows=10';
+    const username = "&username=walberg"
+
+    if (term !== '') {
+        fetch(`${url}${queryParams}${term}${maxRows}${username}`)
+            .then(response => response.json())
+            .then(data => {
+                //console.log(data);
+                data.geonames.forEach(element => setResults(old => [...old, element]));
+                setBlured(false);
+            })
+            .catch(error => {
+                console.log('An error occured in fetchLocation()');
+                console.log(error);
+            });
+    }
+}
+
+export const fetchTimezone = (lat, lon, setTimeZone) => {
+    const url= 'https://secure.geonames.org/timezoneJSON?';
+    const username = "&username=walberg"
+    fetch(`${url}lat=${lat}&lng=${lon}${username}`)
+        .then(response => response.json())
+        .then(data => {
+            //console.log(data);
+        })
+        .catch(error => {
+            console.log('An error occured in fetchTimeZone()');
+            console.log(error);
+        })
 }

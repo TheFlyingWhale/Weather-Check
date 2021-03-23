@@ -1,12 +1,12 @@
 import React from 'react';
 import { getSymbol } from '../../common/scripts/getSymbol';
 
-import weatherIcon from '../../common/images/weatherIcons/Sun.svg'
 import './Information.scss';
 import '../../common/styles/Text.scss';
 import '../../common/styles/Colors.scss';
 
 export const Information = props => {
+    //const test = getSymbol(undefined);
     return (
         <div className="information">
             <img className="weatherIcon" src={getSymbol(props.data.instant.symbol)} alt="weather" />

@@ -107,13 +107,16 @@ import heavySleetShowersAndThunderDay from '../images/updatedWeatherIcons/heavyS
 import heavySleetShowersAndThunderNight from '../images/updatedWeatherIcons/heavySleetShowersAndThunderNight.svg';
 //import heavySleetShowersAndThunderTwilight from '../images/updatedWeatherIcons/heavySleetShowersAndThunderTwilight.svg';
 
+//Others
+import error from '../images/uiIcons/error.svg';
+import empty from '../images/uiIcons/empty.svg'
 
 //Takes a string as input and returns the correlating image
 export const getSymbol = icon => {
     //console.log(icon);
     let weather, timeOfDay;
     //Check to see if the input is null
-    if (icon !== null) {
+    if (icon !== null && icon !== undefined) {
         //Splits the input and divides it into weather and timeOfDay
         if (icon.includes('_')) {
             const input = icon.split('_');
@@ -481,13 +484,22 @@ export const getSymbol = icon => {
                     //console.log('<!-- Sleet And Thunder');
                     return sleetAndThunder;
                 } else {
-                    console.log('<!-- Sleet');
+                    //console.log('<!-- Sleet');
                     return sleet;
                 }
             }
 
         } else {
             console.log('something went wrong in getSymbol()');
+            return error;
+        }
+    } else {
+        if (icon === null) {
+            //console.log('icon is null');
+            return empty;
+        }else if(icon === undefined){
+            //console.log('icon is undefined');
+            return empty;
         }
     }
 }

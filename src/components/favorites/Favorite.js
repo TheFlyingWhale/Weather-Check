@@ -9,7 +9,7 @@ import '../../common/styles/Colors.scss';
 import '../../common/styles/Text.scss';
 
 export const Favorite = props => {
-    const [location, setLocation] = useState({ name: props.location, lalo: props.lalo });
+    const [location] = useState({ name: props.location, lalo: props.lalo });
     const [data, setData] = useState(dataModel);
 
     useEffect(() => {
