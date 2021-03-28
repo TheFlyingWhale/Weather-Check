@@ -12,7 +12,7 @@ export const Favorites = props => {
                 <h1 className="txt-large txt-w-medium black">Favorites</h1>
             </div>
             <div className="favorites">
-                {props.favorites.map((element, i) => <Favorite key={i} location={element.name} lalo={element.lalo} setLocation={props.setLocation}/>)}
+                {props.favorites.map((element, i) => <Favorite key={i+element.lalo[0]+element.lalo[1]} location={element.name} lalo={element.lalo} setLocation={props.setLocation}/>)}
             </div>
         </div>
     );
