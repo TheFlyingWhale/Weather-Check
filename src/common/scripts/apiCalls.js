@@ -51,7 +51,7 @@ export const fetchTimezone = (lat, lon, setTimeZone) => {
     fetch(`${url}lat=${lat}&lng=${lon}${username}`)
         .then(response => response.json())
         .then(data => {
-            //console.log(data);
+            console.log(data);
         })
         .catch(error => {
             console.log('An error occured in fetchTimeZone()');
