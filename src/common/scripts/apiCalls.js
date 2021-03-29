@@ -5,9 +5,9 @@ import { digestLocationData } from './dataDigester';
  */
 export const getLocationData = (lat, lon, func) => {
     const url = `https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${lat}&lon=${lon}`;
-    const sitename = 'https://github.com/theflyingwhale';
+    //const sitename = 'https://github.com/theflyingwhale';
     const useragent = { 
-        
+        //'User-Agent': sitename,
         'Accept': 'application/json' 
     };
     fetch(url, {
