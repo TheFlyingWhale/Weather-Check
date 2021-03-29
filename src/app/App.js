@@ -15,7 +15,7 @@ const App = () => {
     const showDevTools = false;
 
     const handleSelect = input => {
-        console.log('handleSelect triggered');
+        //console.log('handleSelect triggered');
         const lat = parseFloat(input.lat).toFixed(2);
         const lon = parseFloat(input.lon).toFixed(2);
         const inputLocation = { name: input.name, lalo: [lat.toString(), lon.toString()] };

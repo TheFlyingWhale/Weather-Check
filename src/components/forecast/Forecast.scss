@@ -37,3 +37,15 @@
 .timeOfDay {
     width: 125px;
 }
+
+@media only screen and (max-width: 480px){
+    .forecast{
+        width: 90%;
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    .body-forecast{
+        height: 450px;
+    }
+}

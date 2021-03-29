@@ -13,7 +13,9 @@ export const Forecast = props => {
             <div className="head-forecast">
                 <h1
                     className="txt-large txt-w-medium black title"
-                >Forecast</h1>
+                >
+                    Forecast
+                </h1>
                 <div className="timesOfDay">
                     <p
                         className="txt-small txt-w-normal gray-dark timeOfDay"
@@ -70,17 +72,3 @@ export const Forecast = props => {
         </div>
     );
 }
-/*
-<Row date="Today 16.March"
-    night={moon}
-    morning={moon}
-    noon={moon}
-    evening={moon}
-/>
-<Row date="Monday 17.March" night={moon} morning={rain} noon={rain} evening={fairSun}/>
-<Row date="Tuesday 18.March" night={moon} morning={fairSun} noon={sun} evening={sun}/>
-<Row date="Wednesday 19.March" night={moon} morning={sun} noon={sun} evening={fairSun}/>
-<Row date="Thursday 20.March" night={cloudy} morning={fairSun} noon={fairSun} evening={sun}/>
-<Row date="Friday 21.March" night={moon} morning={sun} noon={sun} evening={sun}/>
-
-*/

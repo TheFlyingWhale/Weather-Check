@@ -1,33 +1,40 @@
 .App {
-  text-align: center;
-  padding-bottom: 50px;
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 .App-header {
-  max-width: 1260px;
-  margin: auto;
+    max-width: 1260px;
+    margin: auto;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 .App-main {
-  max-width: 1260px;
-  margin: auto;
+    max-width: 1260px;
+    margin: auto;
+    margin-top: 45px;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-.devTools{
-  padding: 10px 10px;
-  position: absolute;
-  background-color: lightgreen;
+.devTools {
+    padding: 10px 10px;
+    position: absolute;
+    background-color: lightgreen;
+}
+
+@media only screen and (max-width: 480px) {
+    .App-main{
+        margin-top: 25px;
+    }
 }

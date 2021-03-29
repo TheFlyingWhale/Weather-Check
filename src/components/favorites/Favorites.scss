@@ -19,10 +19,12 @@
     height: 160px;
     background-color: $gray-light;
     border-radius: 15px;
+    border: 1px solid white;
 }
 
 .favorite:hover{
     cursor: pointer;
+    border: 1px solid $gray;
 }
 
 .favorite h2, .favorite p {

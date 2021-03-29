@@ -3,9 +3,15 @@
 .locationContainer{
     display: flex;
     justify-content: center;
-    margin-top: 45px;
+    //margin-top: 45px;
 }
 
 .favoritesContainer{
     margin-top: 45px;
+}
+
+@media only screen and (max-width: 480px){
+    .locationContainer{
+        flex-direction: column;
+    }
 }

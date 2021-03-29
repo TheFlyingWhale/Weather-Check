@@ -11,3 +11,22 @@
 .logo {
     height: 50px;
 }
+
+.search-container{
+    width: auto;
+}
+
+@media only screen and (max-width: 480px){
+    .navBar{
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .logo{
+        height: 33px;
+    }
+
+    .search-container{
+        width: 90%;
+    }
+}
