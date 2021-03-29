@@ -12,7 +12,19 @@ export const Result = props => {
         props.handleBlur();
     }
 
-    return(
-        <p className="searchResultElement txt-normal black" onClick={handleClick}>{props.name} {props.adminName}</p>
+    return (
+        <div 
+            className="searchResultElement"
+            onClick={handleClick}
+        >
+            <p
+                className="resultName txt-normal black"
+            >{props.name}</p>
+            <p
+                className="resultAdmin txt-small gray-dark"
+            >
+                {props.adminName}
+            </p>
+        </div>
     );
 }

@@ -7,7 +7,8 @@ import '../../common/styles/Text.scss';
 import '../../common/styles/Colors.scss';
 
 export const Information = props => {
-    //const test = getSymbol(undefined);
+    console.log(props.location.name.length < 8 && !props.onMobile);
+
     return (
         <div className="information">
             <FavoriteButton 
@@ -19,7 +20,11 @@ export const Information = props => {
             />
             <img className="weatherIcon" src={getSymbol(props.data.instant.symbol)} alt="weather" />
             <h1
-                className="txt-big txt-w-medium black"
+                className={
+                    props.location.name.length > 8 && props.onMobile ?
+                    "txt-big-smaller txt-w-medium black locationName" :
+                    "txt-big txt-w-medium black locationName"
+                }
             >{props.location.name !== undefined ? props.location.name : 'Herøy'}</h1>
             <div className="details">
                 <div className="detail">

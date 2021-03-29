@@ -3,6 +3,8 @@ import { Results } from './Results';
 import './Search.scss';
 import '../../common/styles/Text.scss';
 import { fetchLocation } from '../../common/scripts/apiCalls';
+import searchIcon from '../../common/images/uiIcons/searchIcon.svg';
+import closeIcon from '../../common/images/uiIcons/exit.svg';
 
 export const Search = (props) => {
     const [term, setTerm] = useState('');
@@ -18,8 +20,7 @@ export const Search = (props) => {
     }
 
     //handleBlur removes the results panel on input blur
-    const handleBlur = () => {
-        //console.log(`Blured: ${blured}`);
+    const handleBlur = e => {
         setBlured(true);
     }
 
@@ -28,23 +29,33 @@ export const Search = (props) => {
         setBlured(false);
     }
 
+    const handleClick = () => {
+        if (!blured) {
+            setBlured(true);
+        }
+    }
+
     useEffect(() => {
-        //console.log('effect triggered');
         fetchLocation(term, setResults, setBlured);
     },[term]);
 
     return (
         <div>
             <div className="inputHolder">
-                <form>
+                <form className="inputContainer">
                     <input
                         type="text"
                         className="searchBar txt-normal"
                         placeholder="Search"
                         onChange={handleChange}
                         value={term}
-                        
                         onFocus={deactivateBlur}
+                    />
+                    <img 
+                        className={blured ? "searchIcon" : "closeIcon"}
+                        src={blured ? searchIcon : closeIcon}
+                        onClick={handleClick}
+                        alt={blured ? "search" : "close search results"}
                     />
                 </form>
             </div>

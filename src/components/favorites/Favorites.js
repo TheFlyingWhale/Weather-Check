@@ -6,7 +6,6 @@ import './Favorites.scss';
 import '../../common/styles/Text.scss';
 
 export const Favorites = props => {
-    //console.log(props.favorites);
     return (
         <div className="favoritesContainer">
             <div className="favorites-header">

@@ -7,9 +7,9 @@
     padding-top: 2.5px;
     border-radius: 100px;
     border: none;
-    background: url('../../common/images/uiIcons/searchIcon.svg') no-repeat scroll 16px 16px;
-    background-position: 95% center;
-    background-size: 16px 16px;
+    //background: url('../../common/images/uiIcons/searchIcon.svg') no-repeat scroll 16px 16px;
+    //background-position: 95% center;
+    //background-size: 16px 16px;
     background-color: $gray-light;
     color: $gray-dark;
 }
@@ -31,6 +31,8 @@
     border: 1px solid $gray-border;
     border-radius: 15px;
     text-align: left;
+    z-index: 2;
+    overflow: hidden;
     //padding: 5px 25px;
 }
 
@@ -43,10 +45,64 @@
     cursor: pointer;
 }
 
+.resultAdmin{
+    margin-top: 0;
+}
+
+.resultName{
+    margin-bottom: 0;
+}
+
+.searchIcon{
+    width: 16px;
+    height: 16px;
+    right: 15px;
+    top: 7px;
+    position: absolute;
+}
+
+.closeIcon{
+    width: 16px;
+    height: 16px;
+    right: 15px;
+    top: 7px;
+    position: absolute;
+}
+
+.closeIcon:hover{
+    cursor: pointer;
+}
+
+.inputContainer{
+    width: 250px;
+    height: 30px;
+    position: relative;
+}
+
 @media only screen and (max-width: 480px) {
     .searchBar{
         width: 100%;
         height: 40px;
-        background-size: 20px 20px;
+    }
+
+    .inputContainer{
+        width: 100%;
+        height: 40px;
+    }
+
+    .searchIcon{
+        width: 20px;
+        height: 20px;
+        top: 10px;
+    }
+
+    .closeIcon{
+        width: 20px;
+        height: 20px;
+        top: 10px;
+    }
+
+    .searchResultElement{
+        border-bottom: 1px solid $gray-border;
     }
 }

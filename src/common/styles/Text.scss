@@ -7,6 +7,7 @@
 $small: 1rem; //16px
 $medium: 1.125rem; //18px
 $large: 1.5rem; //24px
+$big-smaller: 4rem;
 $big: 5rem; //80px
 
 :root {
@@ -28,6 +29,12 @@ $big: 5rem; //80px
 .txt-large {
     font: {
         size: $large;
+    }
+}
+
+.txt-big-smaller{
+    font: {
+        size: $big-smaller;
     }
 }
 
