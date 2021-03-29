@@ -45,7 +45,15 @@
         margin-top: 25px;
     }
 
+    .head-forecast{
+        flex-direction: column;
+    }
+
+    .timesOfDay{
+        width: 100%;
+    }
+
     .body-forecast{
-        height: 450px;
+        height: auto;
     }
 }

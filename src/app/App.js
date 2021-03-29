@@ -31,24 +31,24 @@ const App = () => {
     //Checks if current location is in favorites
     useEffect(() => {
         //console.log(favorites.some(element => element.name === location.name));
-        if(favorites.some(element => element.name === location.name)){
+        if (favorites.some(element => element.name === location.name)) {
             setIsFavorite(true);
-        }else{
+        } else {
             setIsFavorite(false);
         }
-    },[favorites, location]);
+    }, [favorites, location]);
 
     //Gets favorites from localStorage and sets favorites state equal to localStorage
     useEffect(() => {
         if (localStorage.getItem('favorites') !== null) {
             setFavorites(JSON.parse(localStorage.getItem('favorites')));
         }
-    },[]);
+    }, []);
 
     //Sets favorites in localStorage when favorites state changes
     useEffect(() => {
         localStorage.setItem('favorites', JSON.stringify(favorites));
-    },[favorites]);
+    }, [favorites]);
 
     return (
         <div className="App">
@@ -57,21 +57,21 @@ const App = () => {
             </header>
             <main className="App-main">
                 <Location
-                    location={location} 
-                    data={data} 
-                    isFavorite={isFavorite} 
-                    setIsFavorite={setIsFavorite} 
+                    location={location}
+                    data={data}
+                    isFavorite={isFavorite}
+                    setIsFavorite={setIsFavorite}
                     setFavorites={setFavorites}
                     favorites={favorites}
                 />
 
-                <Favorites 
+                <Favorites
                     favorites={favorites}
                     setLocation={setLocation}
                 />
 
             </main>
-            {showDevTools ? <DevTools data={data} location={location}/> : null}
+            {showDevTools ? <DevTools data={data} location={location} /> : null}
         </div>
     );
 }

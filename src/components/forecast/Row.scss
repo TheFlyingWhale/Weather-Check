@@ -8,6 +8,11 @@
     display: flex;
 }
 
+.row-container {
+    height: auto;
+    width: 100%;
+}
+
 .date {
     width: 30%;
     height: 100%;
@@ -25,12 +30,40 @@
 .weatherIcons {
     width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-
 }
 
 .icon {
     height: 50px;
-    width: 125px;
+}
+
+.icon-container {
+    height: 50px;
+}
+
+.icon-container p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .weatherIcons {
+        width: 100%;
+    }
+
+    .row {
+        margin: {
+            top: 5px;
+            bottom: 25px;
+        }
+        height: 100px;
+    }
+
+    .icon-container{
+        height: 50 + 24px;
+    }
+
+    .date{
+        padding-left: 0;
+    }
 }

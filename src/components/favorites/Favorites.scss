@@ -9,7 +9,7 @@
     display: flex;
 }
 
-.favorites .favorite{
+.favorite{
     margin-right: 25px;
 }
 
@@ -38,4 +38,23 @@
 
 .location{
     height: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+    .favoritesContainer{
+        width: 90%;
+        margin: auto;
+    }
+
+    .favorites{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .favorite{
+        width: 160px;
+        height: 160px;
+        margin-bottom: 25px;
+        margin-right: 0;
+    }
 }
