@@ -15,6 +15,11 @@
 }
 
 .searchBar:focus{
+    z-index: 2;
+    box-shadow: $shadow;
+}
+
+.searchBar:focus{
     outline: none;
 }
 
@@ -25,6 +30,7 @@
 .Results-container {
     width: 250px;
     min-height: 250px;
+    max-height: 80vh;
     background-color: $gray-light;
     position: absolute;
     margin-top: 10px;
@@ -32,12 +38,14 @@
     border-radius: 15px;
     text-align: left;
     z-index: 2;
-    overflow: hidden;
+    overflow: scroll;
     //padding: 5px 25px;
+    box-shadow: $shadow;
 }
 
 .searchResultElement {
     padding: 5px 25px;
+    border-bottom: 1px solid $gray-border;
 }
 
 .searchResultElement:hover {
@@ -47,10 +55,12 @@
 
 .resultAdmin{
     margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .resultName{
     margin-bottom: 0;
+    margin-top: 10px;
 }
 
 .searchIcon{
