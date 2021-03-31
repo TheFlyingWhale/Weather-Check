@@ -1,3 +1,5 @@
+@import '../common//styles/Spacing.scss';
+
 .App {
     text-align: center;
     padding-bottom: 15px;
@@ -15,7 +17,7 @@
 .App-main {
     max-width: 1260px;
     margin: auto;
-    margin-top: 15px;
+    margin-top: $top-marg-desktop;
 }
 
 @keyframes App-logo-spin {
@@ -35,6 +37,6 @@
 
 @media only screen and (max-width: 480px) {
     .App-main{
-        margin-top: 25px;
+        margin-top: $top-marg-mobile;
     }
 }

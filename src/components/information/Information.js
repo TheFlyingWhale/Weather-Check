@@ -7,7 +7,7 @@ import '../../common/styles/Text.scss';
 import '../../common/styles/Colors.scss';
 
 export const Information = props => {
-    console.log(props.location.name.length < 8 && !props.onMobile);
+    //console.log(props.location.name.length < 8 && !props.onMobile);
 
     return (
         <div className="information">

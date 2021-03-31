@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import './App.scss';
+
 import { Nav } from '../components/nav/Nav';
 import { Location } from '../components/location/Location';
 import { Favorites } from '../components/favorites/Favorites';
 import { getLocationData } from '../common/scripts/apiCalls';
 import { dataModel } from '../common/scripts/dataDigester';
 import { DevTools } from '../components/devTools/DevTools';
+
+import './App.scss';
 
 const App = () => {
     const [location, setLocation] = useState({ name: 'Oslo', lalo: [59.91, 10.75] });

@@ -1,4 +1,5 @@
-@import '../../common/styles/Colors.scss';
+@import "../../common/styles/Colors.scss";
+@import '../../common/styles/Spacing.scss';
 
 .favorites-header {
     display: flex;
@@ -13,7 +14,7 @@
     display: flex;
 }
 
-.favorite{
+.favorite {
     margin-right: 25px;
 }
 
@@ -27,36 +28,43 @@
     box-shadow: $shadow;
 }
 
-.favorite:hover{
+.favorite:hover {
     cursor: pointer;
     border: 1px solid $gray;
 }
 
-.favorite h2, .favorite p {
+.favorite h2,
+.favorite p {
     margin: 0;
 }
 
-.favoriteWeatherIcon{
+.favoriteWeatherIcon {
     height: 80px;
     width: 80px;
 }
 
-.location{
+.location {
     height: 30px;
 }
 
+.favoritesContainer {
+    margin-top: $top-marg-desktop;
+}
+
+//Mobile
 @media only screen and (max-width: 480px) {
-    .favoritesContainer{
+    .favoritesContainer {
         width: 90%;
         margin: auto;
+        margin-top: $top-marg-mobile;
     }
 
-    .favorites{
+    .favorites {
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    .favorite{
+    .favorite {
         width: 160px;
         height: 160px;
         margin-bottom: 25px;
