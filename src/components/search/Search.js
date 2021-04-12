@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
 import { Results } from './Results';
+import useDebounce from '../../common/scripts/debounce';
 import './Search.scss';
 import '../../common/styles/Text.scss';
 import { fetchLocation } from '../../common/scripts/apiCalls';
@@ -10,6 +11,10 @@ export const Search = (props) => {
     const [term, setTerm] = useState('');
     const [results, setResults] = useState([]);
     const [blured, setBlured] = useState(true);
+    /*debouncedTerm is used to delay the initial api call
+    so that it happens when the user is finished typing what they're
+    searching for*/
+    const debouncedTerm = useDebounce(term, 500);
 
     //handleChange takes care of setting the input
     const handleChange = e => {
@@ -32,12 +37,13 @@ export const Search = (props) => {
     const handleClick = () => {
         if (!blured) {
             setBlured(true);
+            setTerm('');
         }
     }
 
     useEffect(() => {
-        fetchLocation(term, setResults, setBlured);
-    },[term]);
+        fetchLocation(debouncedTerm, setResults, setBlured);
+    },[debouncedTerm]);
 
     return (
         <div>

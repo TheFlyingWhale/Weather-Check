@@ -39,7 +39,7 @@ export const fetchLocation = (term, setResults, setBlured) => {
             Headers: 'Accept'
         })
             .then(response => {
-                console.log(response);
+                //console.log(response);
                 return response.json();
             })
             .then(data => {
