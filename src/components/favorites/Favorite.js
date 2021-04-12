@@ -3,6 +3,7 @@ import { dataModel } from '../../common/scripts/dataDigester';
 import { getLocationData } from '../../common/scripts/apiCalls';
 import { getSymbol } from '../../common/scripts/getSymbol';
 
+
 import './Favorites.scss';
 
 import '../../common/styles/Colors.scss';

@@ -2,6 +2,7 @@ import React from 'react';
 import { getSymbol } from '../../common/scripts/getSymbol';
 import { FavoriteButton } from '../favoriteButton/FavoriteButton';
 
+
 import './Information.scss';
 import '../../common/styles/Text.scss';
 import '../../common/styles/Colors.scss';
