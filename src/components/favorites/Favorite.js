@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { dataModel } from '../../common/scripts/dataDigester';
 import { getLocationData } from '../../common/scripts/apiCalls';
 import { getSymbol } from '../../common/scripts/getSymbol';
+import getFormatedWord from '../../common/scripts/getFormatedWord';
 
 
 import './Favorites.scss';
@@ -24,7 +25,7 @@ export const Favorite = props => {
     return (
         <div className="favorite" onClick={handleClick}>
             <img className="favoriteWeatherIcon" alt="icon" src={getSymbol(data.instant.symbol)} />
-            <h2 className="txt-large txt-w-normal black location">{props.location}</h2>
+            {getFormatedWord(props.location)}
             <p className="txt-small txt-w-normal gray">{data.instant.temperature}°C</p>
         </div>
     );

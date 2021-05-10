@@ -7,6 +7,7 @@
 $small: 1rem; //16px
 $medium: 1.125rem; //18px
 $large: 1.5rem; //24px
+$large-larger: 3rem;
 $big-smaller: 4rem;
 $big: 5rem; //80px
 
@@ -29,6 +30,12 @@ $big: 5rem; //80px
 .txt-large {
     font: {
         size: $large;
+    }
+}
+
+.txt-large-larger {
+    font: {
+        size: $large-larger;
     }
 }
 
@@ -60,5 +67,9 @@ $big: 5rem; //80px
     font: {
         weight: 700;
     }
+}
+
+.minimizedLineHeight{
+    line-height: 1rem;
 }
 
